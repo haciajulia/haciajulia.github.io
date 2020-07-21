@@ -11,7 +11,7 @@
 }
 
 .skills-section {
-    margin-top: 64px;
+  margin-top: 64px;
   &__emoji {
     font-size: 64px;
     line-height: 72px;
@@ -24,34 +24,49 @@
     font-size: 24px;
     line-height: 44px;
     text-align: center;
+    margin: 16px 0 24px;
   }
 }
 
 .skills-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
-    color: $lightblue;
-    font-weight: 600;
+  color: $lightblue;
+  width: 288px;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 0;
+  list-style-type: none;
+  &__item {
+    padding: 0 0 0 24px;
+    margin: 0 0 16px;
+    position: relative;
     font-size: 16px;
     line-height: 24px;
-    list-style: none;
-    padding: 0;
-  &__item {
-    text-align: left;
-    padding-bottom: 24px;
     &::before {
-      content: url(https://res.cloudinary.com/hacia/image/upload/v1595319170/tick_z6hiuh.svg);
-      padding-right: 12px;
+      position: absolute;
+      left: 0;
+      top: 7px;
+      content: url("");
+      width: 12px;
+      height: 9px;
+      background: url("../assets/img/tick.svg");
+      background-repeat: no-repeat;
+      display: block;
     }
     &--blue::before {
-      content: url(https://res.cloudinary.com/hacia/image/upload/v1595321198/bluetick_onvxsk.svg);
-      padding-right: 12px;
+      content: url("");
+      width: 12px;
+      height: 9px;
+      background: url("../assets/img/bluetick.svg");
+      background-repeat: no-repeat;
+      display: block;
     }
     &--bullet::before {
-      content: url(https://res.cloudinary.com/hacia/image/upload/v1595321190/bullet_ynfllj.svg);
-      padding-right: 12px;
+      content: url("");
+      width: 12px;
+      height: 9px;
+      background: url("../assets/img/bullet.svg");
+      background-repeat: no-repeat;
+      display: block;
     }
   }
 }
