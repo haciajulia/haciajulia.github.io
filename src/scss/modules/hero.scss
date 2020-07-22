@@ -1,44 +1,86 @@
 .hero {
-    padding: 74px 16px 88px;
-    &__image {
-        box-sizing: content-box;
-        width: 96px;
-        height: 96px;
-        border-radius: 50%;
-        border: 16px solid #F6F9FD;
+  padding: 74px 16px 88px;
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  &__bubble {
+    position: absolute;
+    left: calc(50% + 90px);
+    top: -26px;
+  }
+  &__image {
+    box-sizing: content-box;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 16px solid #f6f9fd;
+    @media (min-width: $tablet) {
+      width: 178px;
+      height: 178px;
+      border: 24px solid #f6f9fd;
     }
-    &__image-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  }
+  &__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  &__hello {
+    display: none;
+    @media (min-width: $desktop) {
+      display: block;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      background: #1070CA;
+      border-radius: 16px;
+      color: white;
+      padding: 16px 19px;
+      position: relative;
+      &:after {
+          content: "";
+          top:100%;
+          left: 32px;
+          position: absolute;
+          display: block;
+          width: 17.42px;
+          height: 22.66px;
+          background: url(../assets/img/speech.svg);
+      }
+    }
+  }
+  &__description {
+    text-align: center;
+  }
+  &__header {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: $darktext;
+    @media (min-width: $desktop) {
+      font-size: 32px;
+    }
+  }
+  &__special {
+    color: $blue;
+  }
 
+  &__text {
+    color: $deafulttext;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 52px;
+    @media (min-width: $desktop) {
+      font-size: 20px;
     }
-    &__hello {
-        display: none;
+    &--special {
+      color: $link;
+      font-weight: bold;
+      text-decoration: none;
     }
-    &__description {
-        text-align: center;
-    }
-    &__header {
-        font-weight: bold;
-        font-size: 26px;
-        line-height: 32px;
-        color: $darktext;
-    }
-    &__special {
-        color: $blue;
-    }
-
-    &__text {
-        color: $deafulttext;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 32px;
-        margin-bottom: 52px;
-        &--special {
-            color: $link;
-            font-weight: bold;
-            text-decoration: none;
-        }
-    }
+  }
 }
