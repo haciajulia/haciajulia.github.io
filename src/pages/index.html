@@ -58,8 +58,9 @@
           </p>
         </div>
         <div class="contact__flex">
-        <a class="contact__mail" href="mailto:haciajulia@gmail.com"
-          >haciajulia@gmail.com</a>
+          <a class="contact__mail" href="mailto:haciajulia@gmail.com"
+            >haciajulia@gmail.com</a
+          >
         </div>
       </section>
       <section class="skills" id="skills">
@@ -141,28 +142,42 @@
           I’ve built some projects. Here’s the list of the things I’ve
           done so far.
         </p>
-        <article>
-          <div class="projects__grid">
-            <table>
-              <tr>
-                <td>project:</td>
-                <td>podlaski git</td>
-              </tr>
-              <tr>
-                <td>description:</td>
-                <td>podlaskie aliasy dla gitowych komend</td>
-              </tr>
-              <tr>
-                <td>demo:</td>
-                <td>&lt<a href="#">see here</a>&gt</td>
-              </tr>
-              <tr>
-                <td>github:</td>
-                <td>&lt<a href="#">source code</a>&gt</td>
-              </tr>
-            </table>
-          </div>
-        </article>
+        <div class="projects__grid">
+          <article class="project">
+            <div class="project__window">
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+            </div>
+            <div class="project__content">
+              <img src="../assets/img/git.png" alt="" />
+              <h3 class="project__grid project__title">
+                <span class="project__label">project:</span>
+                <span class="project__title--special"
+                  >podlaski git</span
+                >
+              </h3>
+              <p class="project__grid">
+                <span class="project__label">description:</span>
+                <span>podlaskie aliasy dla gitowych komend</span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">demo:</span>
+                <span
+                  >&lt<a class="project__link" href="#">see here</a
+                  >&gt</span
+                >
+              </p>
+              <p class="project__grid">
+                <span class="project__label">github:</span>
+                <span
+                  >&lt<a class="project__link" href="#">source code</a
+                  >&gt</span
+                >
+              </p>
+            </div>
+          </article>
+        </div>
       </section>
       <section class="contact" id="contact">
         <h2 class="contact__header">Contact me</h2>

@@ -1,17 +1,69 @@
 .projects {
-    margin: 64px 16px 88px;
-    &__header {
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 48px;
-        text-align: center;
-    }
-    &__description {
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 32px;
-        text-align: center;
-        color: $deafulttext;
-        margin: 0 0 46px;
-    }
+  margin: 64px 16px 88px;
+  &__header {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+  }
+  &__description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: $deafulttext;
+    margin: 0 0 46px;
+  }
 }
+
+.project {
+  background-color: #212528;
+  color: #808082;
+  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+  line-height: 24px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  overflow: hidden;
+  &__content {
+      padding: 24px 16px;
+  }
+  &__grid {
+      display: grid;
+      grid-template-columns: 102px 1fr;
+      column-gap: 8px;
+  }
+  &__label {
+      display: block;
+      text-align: right;
+  }
+  &__link {
+    color: #14b5d0;
+  }
+  &__window {
+      background-color: #1e1e1e;
+      height: 40px;
+      display: flex;
+      padding: 16px;
+    }
+  &__circle {
+    background: #464A4D;
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+&__title {
+    &--special {
+  font-weight: bold;
+  color: white;
+}
+}
+}
+
+
+ .git {
+    z-index: 100;
+    position: fixed;
+ }
