@@ -36,6 +36,9 @@
   &__label {
       display: block;
       text-align: right;
+      &--different {
+          color: #A3A3A3;
+      }
   }
   &__link {
     color: #14b5d0;
@@ -61,9 +64,3 @@
 }
 }
 }
-
-
- .git {
-    z-index: 100;
-    position: fixed;
- }
